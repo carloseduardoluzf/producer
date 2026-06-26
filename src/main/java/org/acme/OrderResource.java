@@ -55,7 +55,7 @@ public class OrderResource {
 
         String event = "{\"id\":%d,\"product\":\"%s\",\"qty\":%d}".formatted(id, req.product(), req.qty());
         emitter.send(event);
-        LOG.infof("Pedido %d criado e publicado no Kafka", id);
+        LOG.infof("Pedido %d criado e publicado no Kafka TAM DESAFIO", id);
 
         return Response.status(Response.Status.CREATED).entity(Map.of("id", id)).build();
     }
