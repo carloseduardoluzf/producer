@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS orders (
+    id SERIAL PRIMARY KEY,
+    product VARCHAR(255) NOT NULL,
+    qty INTEGER NOT NULL,
+    price NUMERIC(12,2) NOT NULL
+);
